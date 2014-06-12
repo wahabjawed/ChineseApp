@@ -13,75 +13,51 @@
 <body>
 <div class="container">
   <table width = "100%">
-    <tr> <td colspan="3"><img src="img/top-logo+title-english.png" class="img-responsive"> </td></tr>
     <tr>
-      <td><img src="img/ChineseChar/draw-character-mu-wood.png" class="img-responsive"></td>
+      <td colspan="3"><img src="img/top-logo+title-english.png" class="img-responsive"></td>
+    </tr>
+    <tr>
+      <td><img id="one" src="img/ChineseChar/draw-character-mu-wood.png" class="img-responsive"></td>
       <td><img src="img/ChineseChar/draw-character-ren.png" class="img-responsive"></td>
       <td><img src="img/ChineseChar/draw-character-ri-sun.png" class="img-responsive"></td>
     </tr>
     <tr>
       <td><img src="img/ChineseChar/draw-character-tian-field.png" class="img-responsive"></td>
       <td><img src="img/ChineseChar/draw-character-mie-extinguish.png" class="img-responsive"></td>
-      <td><img src="img/ChineseChar/draw-character-wang-king.png" class="img-responsive"></td>
+      <td><img src="img/ChineseChar/draw-character-chang-cliff.png" class="img-responsive"></td>
     </tr>
     <tr>
       <td><img src="img/ChineseChar/draw-character-wang-king.png" class="img-responsive"></td>
       <td><img src="img/ChineseChar/draw-character-shan.png" class="img-responsive"></td>
       <td><img src="img/ChineseChar/draw-character-kou-mouth.png" class="img-responsive"></td>
     </tr>
-      <tr>
-    
-    <td><img id="btnAbout" src="img/logo.png" class="img-responsive"></td>
-      <td colspan="2">
-    
-    <table>
-      <tr>
-        <td><img id="btnFB" src="img/social-media-icon-facebook.png" class="img-responsive"></td>
-        <td><img id="btnTwitter" src="img/social-media-icon-twitter.png" class="img-responsive"></td>
-        <td><img id="btnPintrest" src="img/social-media-icon-pinterest.png" class="img-responsive"></td>
-        <td><img id="btnGoogle" src="img/social-media-icon-google+.png" class="img-responsive"></td>
-      
-      
-        </tr>
-      
-    </table>
-    </td>
-      </tr>
-    
-    <tr><td colspan="3"> <img src="img/download-Survival-Chinese-ebook.png" class="img-responsive"> </td></tr>
+    <tr>
+      <td><img id="btnAbout" src="img/i-logo.png" class="img-responsive"></td>
+      <td colspan="2"><table>
+          <tr>
+            <td><img id="btnFB" src="img/social-media-icon-facebook.png" class="img-responsive"></td>
+            <td><img id="btnTwitter" src="img/social-media-icon-twitter.png" class="img-responsive"></td>
+            <td><img id="btnPintrest" src="img/social-media-icon-pinterest.png" class="img-responsive"></td>
+            <td><img id="btnGoogle" src="img/social-media-icon-google+.png" class="img-responsive"></td>
+          </tr>
+        </table></td>
+    </tr>
+    <tr>
+      <td colspan="3"><img id="ad" src="img/download-Survival-Chinese-ebook.png" class="img-responsive"></td>
+    </tr>
   </table>
 </div>
 </body>
 <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
 <script type="text/javascript" src="phonegap.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="js/socialMedia.js"></script>
 <script type="text/javascript">
             app.initialize();
-
-
-        $(document).ready(function () {
-
-            $('#btnFB').click(function () {
-				
-				var ref = window.open('http://mobile.dudamobile.com/site/apc_1apc?url=http%3A%2F%2Fapc.com.ng%2F#2634', '_self', 'location=no');
-               
-            });
-            $('#btnTwitter').click(function () {
-              
-			  var ref = window.open('https://m.facebook.com/APCNigeria?_rdr', '_self', 'location=no');
-			  
-            });
-			$('#btnGoogle').click(function () {
-            
-			var ref = window.open('https://m.facebook.com/profile.php?id=1425841740973785', '_self', 'location=no');  
-            
-			});
 			
-     		$('#btnPintrest').click(function () {
-            
-			var ref = window.open('https://m.facebook.com/profile.php?id=1425841740973785', '_self', 'location=no');  
-            
-			});
+			
+			  $(document).ready(function () {
 			
 			 $('#btnAbout').click(function () {
               
@@ -89,8 +65,12 @@
 			  
             });
 			
-        });
-
-
-        </script>
+			 $('#one').click(function () {
+              
+			  var ref = window.open('temp26.html', '_self', 'location=no');
+			  
+            });
+			
+});
+  </script>
 </html>

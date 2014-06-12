@@ -22,13 +22,18 @@
       <img src="img/ChineseChar/draw-character-ri-sun.png" class="img-responsive"></td>
     </tr>
    
-    <tr>
-      <td><img src="img/ChineseChar/draw-character-wang-king.png" class="img-responsive"></td>
-      <td><img src="img/ChineseChar/draw-character-shan.png" class="img-responsive"></td>
-      <td><img src="img/ChineseChar/draw-character-kou-mouth.png" class="img-responsive"></td>
-    </tr>
-      <tr>
+   
     
+    
+<tr>
+      <td><img id="personOne" src="img/person-sasha.png" class="img-responsive"></td>
+      <td><img id="personTwo" src="img/person-marcus.png" class="img-responsive"></td>
+      <td><img id="personThree" src="img/person-jiajia.png" class="img-responsive"></td>
+    </tr>
+
+    
+    
+      <tr>
     <td><img id="btnAbout" src="img/logo.png" class="img-responsive"></td>
       <td colspan="2">
     
@@ -46,44 +51,42 @@
     </td>
       </tr>
     
-    <tr><td colspan="3"> <img src="img/download-Survival-Chinese-ebook.png" class="img-responsive"> </td></tr>
+    <tr><td colspan="3"> <img id= "ad" src="img/download-Survival-Chinese-ebook.png" class="img-responsive"> </td></tr>
   </table>
 </div>
 </body>
 <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
 <script type="text/javascript" src="phonegap.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="js/socialMedia.js"></script>
 <script type="text/javascript">
             app.initialize();
 
 
         $(document).ready(function () {
 
-            $('#btnFB').click(function () {
-				
-				var ref = window.open('http://mobile.dudamobile.com/site/apc_1apc?url=http%3A%2F%2Fapc.com.ng%2F#2634', '_self', 'location=no');
-               
-            });
-            $('#btnTwitter').click(function () {
-              
-			  var ref = window.open('https://m.facebook.com/APCNigeria?_rdr', '_self', 'location=no');
-			  
-            });
-			$('#btnGoogle').click(function () {
-            
-			var ref = window.open('https://m.facebook.com/profile.php?id=1425841740973785', '_self', 'location=no');  
-            
-			});
-			
-     		$('#btnPintrest').click(function () {
-            
-			var ref = window.open('https://m.facebook.com/profile.php?id=1425841740973785', '_self', 'location=no');  
-            
-			});
+        
 			
 			 $('#btnAbout').click(function () {
               
 			  var ref = window.open('about.html', '_self', 'location=no');
+			  
+            });
+			
+				 $('#personOne').click(function () {
+              
+		
+			  
+            });
+			
+				 $('#personTwo').click(function () {
+              
+			  
+            });
+			
+				 $('#personThree').click(function () {
+              
 			  
             });
 			
