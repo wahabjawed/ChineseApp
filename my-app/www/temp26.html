@@ -97,7 +97,7 @@ playAudio('bai-white.mp3');
 
  function playAudio(src) {
             if (device.platform == 'Android') {
-                src = '/android_asset/www/' + src;
+                src = '/android_asset/www/img/Sound/' + src;
             }
  alert(src);
             var media = new Media(src, success, error_error);
