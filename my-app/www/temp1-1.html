@@ -13,25 +13,27 @@
 <body>
 <div class="container">
   <table width = "100%">
+    <tr> <td colspan="3"><a href="index.html"><img src="img/top-logo+title-english.png" class="img-responsive"> </a></td></tr>
+  
+  
     <tr>
-      <td colspan="3"><img src="img/top-logo+title-english.png" class="img-responsive"></td>
+      <td colspan="2"><img src="img/ChineseChar/draw-character-lin-woods.png" class="img-responsive"></td>
+      <td><div style="padding-bottom:10px"><a href="temp1.html"><img src="img/ChineseChar/draw-character-mu-wood.png" class="img-responsive"></a></div>
+      <a href="temp1-2.html"><img src="img/ChineseChar/draw-character-sen-forest.png" class="img-responsive"></a></td>
     </tr>
-    <tr>
-      <td><img id="one" src="img/ChineseChar/draw-character-mu-wood.png" class="img-responsive"></td>
-      <td><img src="img/ChineseChar/draw-character-ren.png" class="img-responsive"></td>
-      <td><img src="img/ChineseChar/draw-character-ri-sun.png" class="img-responsive"></td>
+   
+   
+    
+    
+<tr style="padding-bottom:0px">
+      <td><a href="c1-1.html"><img src="img/personsasha.png" class="img-responsive"></a></td>
+      <td><a href="d1-1.html"><img src="img/personmarcus.png" class="img-responsive"></a></td>
+      <td><img id="personThree" src="img/personjiajia.png" class="img-responsive"></td>
     </tr>
-    <tr>
-      <td><img src="img/ChineseChar/draw-character-tian-field.png" class="img-responsive"></td>
-      <td><img src="img/ChineseChar/draw-character-mie-extinguish.png" class="img-responsive"></td>
-      <td><img src="img/ChineseChar/draw-character-chang-cliff.png" class="img-responsive"></td>
-    </tr>
-    <tr>
-      <td><img src="img/ChineseChar/draw-character-wang-king.png" class="img-responsive"></td>
-      <td><img src="img/ChineseChar/draw-character-shan.png" class="img-responsive"></td>
-      <td><img src="img/ChineseChar/draw-character-kou-mouth.png" class="img-responsive"></td>
-    </tr>
-  <tr>
+
+    
+    
+      <tr>
    
       <td colspan="3" style="padding-bottom:0px;padding-top:0px">
     
@@ -39,7 +41,7 @@
 <tr>
 <td><img src="img/i-logo.png"   class="img-responsive" id="btnAbout"></td>
 
-            <td><img id="btnFB" src="img/social-media-icon-facebook.png" class="img-responsive"></td>
+        <td><img id="btnFB" src="img/social-media-icon-facebook.png" class="img-responsive"></td>
             <td><img id="btnTwitter" src="img/social-media-icon-twitter.png" class="img-responsive"></td>
             <td><img id="btnPintrest" src="img/social-media-icon-pinterest.png" class="img-responsive"></td>
             <td><img id="btnGoogle" src="img/social-media-icon-google+.png" class="img-responsive"></td>
@@ -49,7 +51,6 @@
       </tr>
     
     <tr><td colspan="3" style="padding-top:0px"> <img id= "ad" src="img/download-Survival-Chinese-ebook.png" class="img-responsive"> </td></tr>
-    
     <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- WomingBai App1 -->
  <tr><td colspan="3" style="padding-top:0px">
@@ -63,7 +64,6 @@ data-ad-slot="6734046001"></ins>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
   </table>
-
 </div>
 </body>
 <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
@@ -74,9 +74,11 @@ data-ad-slot="6734046001"></ins>
 
 <script type="text/javascript">
             app.initialize();
-			
-			
-			  $(document).ready(function () {
+
+
+        $(document).ready(function () {
+
+        
 			
 			 $('#btnAbout').click(function () {
               
@@ -84,12 +86,39 @@ data-ad-slot="6734046001"></ins>
 			  
             });
 			
-			 $('#one').click(function () {
-              
-			  var ref = window.open('temp1.html', '_self', 'location=no');
+				
+			
+				 $('#personThree').click(function () {
+					 
+					 
+				
+            //  var snd = new Audio("img/Sound/bai-white.mp3"); // buffers automatically when created
+//snd.play();
+playAudio('lin-woods.mp3');
 			  
             });
 			
-});
-  </script>
+        });
+
+
+ function playAudio(src) {
+            if (device.platform == 'Android') {
+                src = '/android_asset/www/img/Sound/' + src;
+            }
+
+            var media = new Media(src, success, error_error);
+ 
+            media.play();
+        }
+ 
+        function success() {
+            // ignore
+        }
+ 
+        function error_error(e) {
+            alert('great error');
+            alert(e.message);
+        }
+
+        </script>
 </html>
