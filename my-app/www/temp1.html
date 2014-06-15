@@ -94,7 +94,7 @@ data-ad-slot="6734046001"></ins>
 				
             //  var snd = new Audio("img/Sound/bai-white.mp3"); // buffers automatically when created
 //snd.play();
-playAudio('mu-wood.mp3');
+playAudio('img/Sound/mu-wood.mp3');
 			  
             });
 			
@@ -103,7 +103,7 @@ playAudio('mu-wood.mp3');
 
  function playAudio(src) {
             if (device.platform == 'Android') {
-                src = '/android_asset/www/img/Sound/' + src;
+                src = '/android_asset/www/' + src;
             }
 
             var media = new Media(src, success, error_error);
