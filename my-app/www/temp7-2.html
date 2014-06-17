@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<link href="css\bootstrap.css" rel="stylesheet">
+<link href="css\custom.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+  <table width = "100%">
+    <tr> <td colspan="3"><a href="index.html"><img src="img/top-logo+title-english.png" class="img-responsive"> </a></td></tr>
+  
+  
+    <tr>
+      <td colspan="2"><img src="img/ChineseChar/draw-character-zhu-master-monarch.png" class="img-responsive"></td>
+      <td><div style="padding-bottom:10px"><a href="temp7-1.html"><img src="img/ChineseChar/draw-character-yu-jade.png" class="img-responsive"></a></div>
+      <a href="temp7.html"><img src="img/ChineseChar/draw-character-wang-king.png" class="img-responsive"></a></td>
+    </tr>
+   
+   
+    
+    
+<tr style="padding-bottom:0px">
+      <td><a href="c7-2.html"><img src="img/personsasha.png" class="img-responsive"></a></td>
+      <td><a href="d7-2.html"><img src="img/personmarcus.png" class="img-responsive"></a></td>
+      <td><img id="personThree" src="img/personjiajia.png" class="img-responsive"></td>
+    </tr>
+
+    
+    
+      <tr>
+   
+      <td colspan="3" style="padding-bottom:0px;padding-top:0px">
+    
+    <table>
+<tr>
+<td><img src="img/i-logo.png"   class="img-responsive" id="btnAbout"></td>
+
+        <td><img id="btnFB" src="img/social-media-icon-facebook.png" class="img-responsive"></td>
+            <td><img id="btnTwitter" src="img/social-media-icon-twitter.png" class="img-responsive"></td>
+            <td><img id="btnPintrest" src="img/social-media-icon-pinterest.png" class="img-responsive"></td>
+            <td><img id="btnGoogle" src="img/social-media-icon-google+.png" class="img-responsive"></td>
+          </tr>      
+    </table>
+    </td>
+      </tr>
+    
+    <tr><td colspan="3" style="padding-top:0px"> <img id= "ad" src="img/download-Survival-Chinese-ebook.png" class="img-responsive"> </td></tr>
+    <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- WomingBai App1 -->
+ <tr><td colspan="3" style="padding-top:0px">
+ <div style="float:right"><p>Advertisment</p></div>
+<ins class="adsbygoogle"
+style="display:inline-block;width:100%;height:60px"
+data-ad-client="ca-pub-9279312140865819"
+data-ad-slot="6734046001"></ins>
+</td></tr>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+  </table>
+</div>
+</body>
+<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="phonegap.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="js/socialMedia.js"></script>
+
+<script type="text/javascript">
+            app.initialize();
+
+
+        $(document).ready(function () {
+
+        
+			
+			 $('#btnAbout').click(function () {
+              
+			  var ref = window.open('about.html', '_self', 'location=no');
+			  
+            });
+			
+				
+			
+				 $('#personThree').click(function () {
+					 
+					 
+				
+            //  var snd = new Audio("img/Sound/bai-white.mp3"); // buffers automatically when created
+//snd.play();
+playAudio('img/Sound/zhu-master.mp3');
+			  
+            });
+			
+        });
+
+
+ function playAudio(src) {
+            if (device.platform == 'Android') {
+                src = '/android_asset/www/' + src;
+            }
+
+            var media = new Media(src, success, error_error);
+ 
+            media.play();
+        }
+ 
+        function success() {
+            // ignore
+        }
+ 
+        function error_error(e) {
+            alert('great error');
+            alert(e.message);
+        }
+
+        </script>
+</html>
