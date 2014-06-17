@@ -27,10 +27,10 @@
             
             <p style="text-align:justify;font-size:15px">Simply press on their heads in Character details view and you will get the real meaning of this character (Sasha’s head), the ideas behind the image to help you remembering the character (Marcus’ head) or the original native Mandarin Chinese sound of the character (Jia’s head).
             
-            Being two foreigners ourselves we know exactly where you will have problems when starting with Chinese (because we have been there already). To assure a high quality of our products we cooperate with the „Live the language“Mandarin Chinese School in Beijing, China. All our materials are being checked by professional native speaking „Chinese as a second language“ teachers from <a href="http://www.livethelanguage.cn">www.livethelanguage.cn.</a>
+            Being two foreigners ourselves we know exactly where you will have problems when starting with Chinese (because we have been there already). To assure a high quality of our products we cooperate with the „Live the language“Mandarin Chinese School in Beijing, China. All our materials are being checked by professional native speaking „Chinese as a second language“ teachers from <span id="btnOne">www.livethelanguage.cn.</span>
             <br>
             <br>
-            Find more materials for studying Chinese on <a href="http://www.womingbai.com">www.womingbai.com.</a> 
+            Find more materials for studying Chinese on <span id="btnTwo">www.womingbai.com.</span> 
             <br>
             <br>
             This app was programmed by <a href="http://wahabjawed.silversagesstudio.com">Wahab Jawed</a> &amp; Taqi Abbas.
@@ -63,6 +63,21 @@ data-ad-slot="6734046001"></ins>
 <script type="text/javascript" src="js/custom.js"></script>
 <script type="text/javascript">
             app.initialize();
+			
+			
+			 $(document).ready(function () {
+			
+			 $('#btnOne').click(function () {
+              
+			  var ref = window.open('http://www.livethelanguage.cn', '_system', 'location=no');
+			  
+            });
+			$('#btnTwo').click(function () {
+              
+			  var ref = window.open('http://www.womingbai.com', '_system', 'location=no');
+			  
+            });
+			  });
 
         </script>
 </html>
